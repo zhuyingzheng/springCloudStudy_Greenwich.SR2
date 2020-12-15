@@ -31,5 +31,6 @@
     	<module>spring-cloud-provider</module>
     	<module>spring-cloud-consumer</module>
     	<module>spring-cloud-eureka</module>
+    	<module>spring-cloud-consumerFegin</module>
     </modules>
 </project>
