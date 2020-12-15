@@ -13,7 +13,10 @@ public class HumanResourceHandler {
 	
 	@RequestMapping("/consumer/get/object")
 	public Object getObject() {
-		String host = "http://localhost:1000";
+//		String host = "http://localhost:1000";
+		
+		//通过服务名调用
+		String host = "http://provider:1000";
 		String url = "/provider/get/employee";
 		
 		return restTemplate.getForEntity(host+url, Object.class);
