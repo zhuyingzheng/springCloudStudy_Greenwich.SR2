@@ -2,12 +2,12 @@ package com;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 
-@EnableFeignClients //标注是feign客户端
+@EnableHystrixDashboard
 @SpringBootApplication
-public class MainAppC {
+public class MainApp {
 	public static void main(String[] args) {
-		SpringApplication.run(MainAppC.class, args);
+		SpringApplication.run(MainApp.class, args);
 	}
 }
